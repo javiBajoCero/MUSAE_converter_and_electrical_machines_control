@@ -4,7 +4,7 @@
  * Code generation for Simulink model "blikingled_28069M_launchpad".
  *
  * Simulink Coder version                : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Tue Feb 27 13:09:28 2024
+ * C source code generated on : Mon Mar  4 15:44:03 2024
  *
  * Note that the generated code is not dependent on this header file.
  * The file is used in cojuction with the automatic build procedure.

@@ -7,9 +7,9 @@
  *
  * Code generation for model "blikingled_28069M_launchpad".
  *
- * Model version              : 1.7
+ * Model version              : 1.9
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Tue Feb 27 13:09:28 2024
+ * C source code generated on : Mon Mar  4 15:44:03 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -32,18 +32,35 @@ DW_blikingled_28069M_launchpa_T blikingled_28069M_launchpad_DW;
 static RT_MODEL_blikingled_28069M_la_T blikingled_28069M_launchpad_M_;
 RT_MODEL_blikingled_28069M_la_T *const blikingled_28069M_launchpad_M =
   &blikingled_28069M_launchpad_M_;
+static void rate_scheduler(void);
+
+/*
+ *         This function updates active task flag for each subrate.
+ *         The function is called at model base rate, hence the
+ *         generated code self-manages all its subrates.
+ */
+static void rate_scheduler(void)
+{
+  /* Compute which subrates run during the next base time step.  Subrates
+   * are an integer multiple of the base rate counter.  Therefore, the subtask
+   * counter is reset when it reaches its limit (zero means run).
+   */
+  (blikingled_28069M_launchpad_M->Timing.TaskCounters.TID[1])++;
+  if ((blikingled_28069M_launchpad_M->Timing.TaskCounters.TID[1]) > 19) {/* Sample time: [0.5s, 0.0s] */
+    blikingled_28069M_launchpad_M->Timing.TaskCounters.TID[1] = 0;
+  }
+}
 
 /* Model step function */
 void blikingled_28069M_launchpad_step(void)
 {
-  /* DiscretePulseGenerator: '<Root>/RED_LED' */
-  blikingled_28069M_launchpad_B.RED_LED =
-    (blikingled_28069M_launchpad_DW.clockTickCounter <
-     blikingled_28069M_launchpad_P.RED_LED_Duty) &&
-    (blikingled_28069M_launchpad_DW.clockTickCounter >= 0L) ?
-    blikingled_28069M_launchpad_P.RED_LED_Amp : 0.0;
+  real_T rtb_RED_LED;
 
   /* DiscretePulseGenerator: '<Root>/RED_LED' */
+  rtb_RED_LED = (blikingled_28069M_launchpad_DW.clockTickCounter <
+                 blikingled_28069M_launchpad_P.RED_LED_Duty) &&
+    (blikingled_28069M_launchpad_DW.clockTickCounter >= 0L) ?
+    blikingled_28069M_launchpad_P.RED_LED_Amp : 0.0;
   if (blikingled_28069M_launchpad_DW.clockTickCounter >=
       blikingled_28069M_launchpad_P.RED_LED_Period - 1.0) {
     blikingled_28069M_launchpad_DW.clockTickCounter = 0L;
@@ -51,9 +68,33 @@ void blikingled_28069M_launchpad_step(void)
     blikingled_28069M_launchpad_DW.clockTickCounter++;
   }
 
+  /* End of DiscretePulseGenerator: '<Root>/RED_LED' */
+  if (blikingled_28069M_launchpad_M->Timing.TaskCounters.TID[1] == 0) {
+    /* DiscretePulseGenerator: '<Root>/enable disable each second' */
+    blikingled_28069M_launchpad_B.enabledisableeachsecond =
+      (blikingled_28069M_launchpad_DW.clockTickCounter_g <
+       blikingled_28069M_launchpad_P.enabledisableeachsecond_Duty) &&
+      (blikingled_28069M_launchpad_DW.clockTickCounter_g >= 0L) ?
+      blikingled_28069M_launchpad_P.enabledisableeachsecond_Amp : 0.0;
+
+    /* DiscretePulseGenerator: '<Root>/enable disable each second' */
+    if (blikingled_28069M_launchpad_DW.clockTickCounter_g >=
+        blikingled_28069M_launchpad_P.enabledisableeachsecond_Period - 1.0) {
+      blikingled_28069M_launchpad_DW.clockTickCounter_g = 0L;
+    } else {
+      blikingled_28069M_launchpad_DW.clockTickCounter_g++;
+    }
+  }
+
+  /* Logic: '<Root>/NOT' incorporates:
+   *  Product: '<Root>/Product'
+   */
+  blikingled_28069M_launchpad_B.NOT = !(rtb_RED_LED *
+    blikingled_28069M_launchpad_B.enabledisableeachsecond != 0.0);
+
   /* S-Function (c280xgpio_do): '<Root>/Digital Output' */
   {
-    if (blikingled_28069M_launchpad_B.RED_LED) {
+    if (blikingled_28069M_launchpad_B.NOT) {
       GpioDataRegs.GPBSET.bit.GPIO34 = 1U;
     } else {
       GpioDataRegs.GPBCLEAR.bit.GPIO34 = 1U;
@@ -61,6 +102,31 @@ void blikingled_28069M_launchpad_step(void)
   }
 
   {                                    /* Sample time: [0.025s, 0.0s] */
+    extmodeErrorCode_T errorCode = EXTMODE_SUCCESS;
+    extmodeSimulationTime_T currentTime = (extmodeSimulationTime_T)
+      ((blikingled_28069M_launchpad_M->Timing.clockTick0 * 1) + 0)
+      ;
+
+    /* Trigger External Mode event */
+    errorCode = extmodeEvent(0,currentTime);
+    if (errorCode != EXTMODE_SUCCESS) {
+      /* Code to handle External Mode event errors
+         may be added here */
+    }
+  }
+
+  if (blikingled_28069M_launchpad_M->Timing.TaskCounters.TID[1] == 0) {/* Sample time: [0.5s, 0.0s] */
+    extmodeErrorCode_T errorCode = EXTMODE_SUCCESS;
+    extmodeSimulationTime_T currentTime = (extmodeSimulationTime_T)
+      ((blikingled_28069M_launchpad_M->Timing.clockTick1 * 20) + 0)
+      ;
+
+    /* Trigger External Mode event */
+    errorCode = extmodeEvent(1,currentTime);
+    if (errorCode != EXTMODE_SUCCESS) {
+      /* Code to handle External Mode event errors
+         may be added here */
+    }
   }
 
   /* Update absolute time for base rate */
@@ -72,6 +138,17 @@ void blikingled_28069M_launchpad_step(void)
   blikingled_28069M_launchpad_M->Timing.taskTime0 =
     ((time_T)(++blikingled_28069M_launchpad_M->Timing.clockTick0)) *
     blikingled_28069M_launchpad_M->Timing.stepSize0;
+  if (blikingled_28069M_launchpad_M->Timing.TaskCounters.TID[1] == 0) {
+    /* Update absolute timer for sample time: [0.5s, 0.0s] */
+    /* The "clockTick1" counts the number of times the code of this task has
+     * been executed. The resolution of this integer timer is 0.5, which is the step size
+     * of the task. Size of "clockTick1" ensures timer will not overflow during the
+     * application lifespan selected.
+     */
+    blikingled_28069M_launchpad_M->Timing.clockTick1++;
+  }
+
+  rate_scheduler();
 }
 
 /* Model initialize function */
@@ -86,10 +163,10 @@ void blikingled_28069M_launchpad_initialize(void)
   blikingled_28069M_launchpad_M->Timing.stepSize0 = 0.025;
 
   /* External mode info */
-  blikingled_28069M_launchpad_M->Sizes.checksums[0] = (3271864882U);
-  blikingled_28069M_launchpad_M->Sizes.checksums[1] = (516924145U);
-  blikingled_28069M_launchpad_M->Sizes.checksums[2] = (3772957000U);
-  blikingled_28069M_launchpad_M->Sizes.checksums[3] = (217896674U);
+  blikingled_28069M_launchpad_M->Sizes.checksums[0] = (3555643005U);
+  blikingled_28069M_launchpad_M->Sizes.checksums[1] = (463469061U);
+  blikingled_28069M_launchpad_M->Sizes.checksums[2] = (2567199571U);
+  blikingled_28069M_launchpad_M->Sizes.checksums[3] = (3951763704U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -116,6 +193,9 @@ void blikingled_28069M_launchpad_initialize(void)
 
   /* Start for DiscretePulseGenerator: '<Root>/RED_LED' */
   blikingled_28069M_launchpad_DW.clockTickCounter = 0L;
+
+  /* Start for DiscretePulseGenerator: '<Root>/enable disable each second' */
+  blikingled_28069M_launchpad_DW.clockTickCounter_g = 0L;
 
   /* Start for S-Function (c280xgpio_do): '<Root>/Digital Output' */
   EALLOW;

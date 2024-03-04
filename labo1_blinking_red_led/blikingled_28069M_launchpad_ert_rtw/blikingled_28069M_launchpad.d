@@ -5,6 +5,8 @@ blikingled_28069M_launchpad.obj: C:/PROGRA~1/MATLAB/R2023a/simulink/include/rtw_
 blikingled_28069M_launchpad.obj: C:/PROGRA~1/MATLAB/R2023a/simulink/include/sysran_types.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~1/MATLAB/R2023a/simulink/include/rtw_continuous.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~1/MATLAB/R2023a/simulink/include/rtw_solver.h
+blikingled_28069M_launchpad.obj: C:/PROGRA~1/MATLAB/R2023a/toolbox/coder/xcp/src/target/ext_mode/include/ext_mode.h
+blikingled_28069M_launchpad.obj: C:/Users/citcea/Documents/GitHub/MUSAE/MUSAE_converter_and_electrical_machines_control/labo1_blinking_red_led/blikingled_28069M_launchpad_ert_rtw/ext_mode_types.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~1/MATLAB/R2023a/toolbox/c2b/tic2000_shared/src/c2000BoardSupport.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdbool.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/_ti_config.h
@@ -55,6 +57,8 @@ C:/PROGRA~1/MATLAB/R2023a/simulink/include/rtw_extmode.h:
 C:/PROGRA~1/MATLAB/R2023a/simulink/include/sysran_types.h:
 C:/PROGRA~1/MATLAB/R2023a/simulink/include/rtw_continuous.h:
 C:/PROGRA~1/MATLAB/R2023a/simulink/include/rtw_solver.h:
+C:/PROGRA~1/MATLAB/R2023a/toolbox/coder/xcp/src/target/ext_mode/include/ext_mode.h:
+C:/Users/citcea/Documents/GitHub/MUSAE/MUSAE_converter_and_electrical_machines_control/labo1_blinking_red_led/blikingled_28069M_launchpad_ert_rtw/ext_mode_types.h:
 C:/PROGRA~1/MATLAB/R2023a/toolbox/c2b/tic2000_shared/src/c2000BoardSupport.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdbool.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/_ti_config.h:

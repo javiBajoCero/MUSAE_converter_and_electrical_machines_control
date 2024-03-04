@@ -7,9 +7,9 @@
  *
  * Code generation for model "blikingled_28069M_launchpad".
  *
- * Model version              : 1.7
+ * Model version              : 1.9
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Tue Feb 27 13:09:28 2024
+ * C source code generated on : Mon Mar  4 15:44:03 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -26,6 +26,7 @@
 #include "sysran_types.h"
 #include "rtw_continuous.h"
 #include "rtw_solver.h"
+#include "ext_mode.h"
 #include "c2000BoardSupport.h"
 #include "F2806x_Device.h"
 #include "F2806x_Gpio.h"
@@ -78,7 +79,8 @@
 
 /* Block signals (default storage) */
 typedef struct {
-  real_T RED_LED;                      /* '<Root>/RED_LED' */
+  real_T enabledisableeachsecond;      /* '<Root>/enable disable each second' */
+  boolean_T NOT;                       /* '<Root>/NOT' */
 } B_blikingled_28069M_launchpad_T;
 
 /* Block states (default storage) for system '<Root>' */
@@ -88,6 +90,7 @@ typedef struct {
   } Scope_PWORK;                       /* '<Root>/Scope' */
 
   int32_T clockTickCounter;            /* '<Root>/RED_LED' */
+  int32_T clockTickCounter_g;          /* '<Root>/enable disable each second' */
   int32_T DigitalOutput_FRAC_LEN;      /* '<Root>/Digital Output' */
 } DW_blikingled_28069M_launchpa_T;
 
@@ -105,6 +108,20 @@ struct P_blikingled_28069M_launchpad_T_ {
   real_T RED_LED_PhaseDelay;           /* Expression: 0
                                         * Referenced by: '<Root>/RED_LED'
                                         */
+  real_T enabledisableeachsecond_Amp;  /* Expression: 1
+                                        * Referenced by: '<Root>/enable disable each second'
+                                        */
+  real_T enabledisableeachsecond_Period;
+                           /* Computed Parameter: enabledisableeachsecond_Period
+                            * Referenced by: '<Root>/enable disable each second'
+                            */
+  real_T enabledisableeachsecond_Duty;
+                             /* Computed Parameter: enabledisableeachsecond_Duty
+                              * Referenced by: '<Root>/enable disable each second'
+                              */
+  real_T enabledisableeachsecond_PhaseDe;/* Expression: 0
+                                          * Referenced by: '<Root>/enable disable each second'
+                                          */
 };
 
 /* Real-time Model Data Structure */
@@ -140,6 +157,11 @@ struct tag_RTM_blikingled_28069M_lau_T {
     time_T taskTime0;
     uint32_T clockTick0;
     time_T stepSize0;
+    uint32_T clockTick1;
+    struct {
+      uint16_T TID[2];
+    } TaskCounters;
+
     time_T tFinal;
     boolean_T stopRequestedFlag;
   } Timing;

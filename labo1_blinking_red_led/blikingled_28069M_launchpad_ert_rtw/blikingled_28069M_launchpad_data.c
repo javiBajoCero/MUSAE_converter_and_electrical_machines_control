@@ -7,9 +7,9 @@
  *
  * Code generation for model "blikingled_28069M_launchpad".
  *
- * Model version              : 1.7
+ * Model version              : 1.9
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Tue Feb 27 13:09:28 2024
+ * C source code generated on : Mon Mar  4 15:44:03 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -38,6 +38,26 @@ P_blikingled_28069M_launchpad_T blikingled_28069M_launchpad_P = {
 
   /* Expression: 0
    * Referenced by: '<Root>/RED_LED'
+   */
+  0.0,
+
+  /* Expression: 1
+   * Referenced by: '<Root>/enable disable each second'
+   */
+  1.0,
+
+  /* Computed Parameter: enabledisableeachsecond_Period
+   * Referenced by: '<Root>/enable disable each second'
+   */
+  2.0,
+
+  /* Computed Parameter: enabledisableeachsecond_Duty
+   * Referenced by: '<Root>/enable disable each second'
+   */
+  1.0,
+
+  /* Expression: 0
+   * Referenced by: '<Root>/enable disable each second'
    */
   0.0
 };
