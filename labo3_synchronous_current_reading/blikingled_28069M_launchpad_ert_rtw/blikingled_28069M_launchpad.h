@@ -7,9 +7,9 @@
  *
  * Code generation for model "blikingled_28069M_launchpad".
  *
- * Model version              : 1.20
+ * Model version              : 1.23
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Mar 18 16:55:18 2024
+ * C source code generated on : Mon Mar 18 17:25:45 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -87,6 +87,9 @@ extern void config_ePWM_XBAR(void);
 typedef struct {
   real_T uHzpulse;                     /* '<Root>/2Hz pulse' */
   real_T SineWave;                     /* '<Root>/Sine Wave' */
+  real_T Sum;                          /* '<S4>/Sum' */
+  real_T Sum_h;                        /* '<S3>/Sum' */
+  real_T Sum_f;                        /* '<S2>/Sum' */
   uint16_T A0andB0[2];                 /* '<S1>/ADC' */
   uint16_T ADC1[2];                    /* '<S1>/ADC1' */
   uint16_T ADC2[2];                    /* '<S1>/ADC2' */
@@ -112,6 +115,24 @@ typedef struct {
 
 /* Parameters (default storage) */
 struct P_blikingled_28069M_launchpad_T_ {
+  real_T TranslatetoAmps2_Offset;     /* Mask Parameter: TranslatetoAmps2_Offset
+                                       * Referenced by: '<S4>/Constant'
+                                       */
+  real_T TranslatetoAmps1_Offset;     /* Mask Parameter: TranslatetoAmps1_Offset
+                                       * Referenced by: '<S3>/Constant'
+                                       */
+  real_T TranslatetoAmps_Offset;       /* Mask Parameter: TranslatetoAmps_Offset
+                                        * Referenced by: '<S2>/Constant'
+                                        */
+  uint16_T TranslatetoAmps2_Gain;      /* Mask Parameter: TranslatetoAmps2_Gain
+                                        * Referenced by: '<S4>/Gain'
+                                        */
+  uint16_T TranslatetoAmps1_Gain;      /* Mask Parameter: TranslatetoAmps1_Gain
+                                        * Referenced by: '<S3>/Gain'
+                                        */
+  uint16_T TranslatetoAmps_Gain;       /* Mask Parameter: TranslatetoAmps_Gain
+                                        * Referenced by: '<S2>/Gain'
+                                        */
   real_T Constant_Value[2];            /* Expression: [1 1]
                                         * Referenced by: '<Root>/Constant'
                                         */
@@ -130,7 +151,7 @@ struct P_blikingled_28069M_launchpad_T_ {
   real_T Constant1_Value;              /* Expression: 1
                                         * Referenced by: '<Root>/Constant1'
                                         */
-  real_T SineWave_Amp;                 /* Expression: 1150
+  real_T SineWave_Amp;                 /* Expression: 227.7826404571533
                                         * Referenced by: '<Root>/Sine Wave'
                                         */
   real_T SineWave_Bias;                /* Expression: 2300
@@ -228,5 +249,8 @@ extern volatile boolean_T runModel;
  *
  * '<Root>' : 'blikingled_28069M_launchpad'
  * '<S1>'   : 'blikingled_28069M_launchpad/Simulink Function'
+ * '<S2>'   : 'blikingled_28069M_launchpad/Simulink Function/Translate to Amps'
+ * '<S3>'   : 'blikingled_28069M_launchpad/Simulink Function/Translate to Amps1'
+ * '<S4>'   : 'blikingled_28069M_launchpad/Simulink Function/Translate to Amps2'
  */
 #endif                           /* RTW_HEADER_blikingled_28069M_launchpad_h_ */

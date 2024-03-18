@@ -116,7 +116,7 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_2_NUMBER=5">
 </listOptionValue>
-<listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_3_SIZE=72">
+<listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_3_SIZE=96">
 </listOptionValue>
 <listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_3_NUMBER=5">
 </listOptionValue>
@@ -194,11 +194,11 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_MEM_BLOCK_2_NUMBER=2">
 </listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MEM_BLOCK_3_SIZE=72">
+<listOptionValue builtIn="false" value="XCP_MEM_BLOCK_3_SIZE=96">
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_MEM_BLOCK_3_NUMBER=2">
 </listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MEM_RESERVED_POOLS_TOTAL_SIZE=592">
+<listOptionValue builtIn="false" value="XCP_MEM_RESERVED_POOLS_TOTAL_SIZE=628">
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_MEM_RESERVED_POOLS_NUMBER=3">
 </listOptionValue>
@@ -380,7 +380,7 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_2_NUMBER=5">
 </listOptionValue>
-<listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_3_SIZE=72">
+<listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_3_SIZE=96">
 </listOptionValue>
 <listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_3_NUMBER=5">
 </listOptionValue>
@@ -458,11 +458,11 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_MEM_BLOCK_2_NUMBER=2">
 </listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MEM_BLOCK_3_SIZE=72">
+<listOptionValue builtIn="false" value="XCP_MEM_BLOCK_3_SIZE=96">
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_MEM_BLOCK_3_NUMBER=2">
 </listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MEM_RESERVED_POOLS_TOTAL_SIZE=592">
+<listOptionValue builtIn="false" value="XCP_MEM_RESERVED_POOLS_TOTAL_SIZE=628">
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_MEM_RESERVED_POOLS_NUMBER=3">
 </listOptionValue>

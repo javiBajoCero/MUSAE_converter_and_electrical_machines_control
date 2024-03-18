@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/ci/19700101 http://schema.mathworks.com/mf0/sl_modelref_info/R2023a http://schema.mathworks.com/mf0/slexec_mm_sto/R2023a_202208151321 http://schema.mathworks.com/mf0/sltp_mm/R2023a_202209151115">
-  <ModelRefInfoRepo.ModelRefInfoRoot type="ModelRefInfoRepo.ModelRefInfoRoot" uuid="c82683f5-48d7-4c4e-9000-8803134cfccb">
-    <childModelRefInfo type="ModelRefInfoRepo.ChildModelRefInfo" uuid="64e79801-7824-477e-a84d-5d180480c013">
+  <ModelRefInfoRepo.ModelRefInfoRoot type="ModelRefInfoRepo.ModelRefInfoRoot" uuid="1cc324e1-ce8e-4672-913f-c3357a6c1fd0">
+    <childModelRefInfo type="ModelRefInfoRepo.ChildModelRefInfo" uuid="9f9f2e21-6b53-49ad-91a8-f0139563de86">
       <isSingleInstance>true</isSingleInstance>
       <modelName>blikingled_28069M_launchpad</modelName>
       <modelPath>blikingled_28069M_launchpad</modelPath>
     </childModelRefInfo>
-    <clockResolutions type="ModelRefInfoRepo.ClockResolutionInfo" uuid="f3e56f02-42fa-400c-ada8-b1d55718392c">
+    <clockResolutions type="ModelRefInfoRepo.ClockResolutionInfo" uuid="c5739304-45ec-426e-a6fd-0378e4f4bf02">
       <rateIdx>1</rateIdx>
       <resolution>.25</resolution>
       <source>DeducedFromSampleTime</source>
     </clockResolutions>
-    <clockResolutions type="ModelRefInfoRepo.ClockResolutionInfo" uuid="5ee474ef-bc81-40c4-82d0-05c7d46a962e">
+    <clockResolutions type="ModelRefInfoRepo.ClockResolutionInfo" uuid="56f98c25-9cf5-40ce-b3b8-2f9d93795936">
       <rateIdx>2</rateIdx>
       <resolution>.25</resolution>
       <source>DeducedFromSpecifiedFixedStepSize</source>
@@ -51,74 +51,74 @@
     <solverStatusFlags>335</solverStatusFlags>
     <timingAndTaskingRegistry>&lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;slexec_sto version=&quot;1.1&quot; packageUris=&quot;http://schema.mathworks.com/mf0/slexec_mm_sto/R2023a_202208151321&quot;&gt;
-  &lt;sto.Registry type=&quot;sto.Registry&quot; uuid=&quot;9770e9e7-a70d-4a91-bae7-99db906f358f&quot;&gt;
+  &lt;sto.Registry type=&quot;sto.Registry&quot; uuid=&quot;c979bdd6-5aa0-4e19-8bb6-90c26155a7ec&quot;&gt;
     &lt;executionSpec&gt;Undetermined&lt;/executionSpec&gt;
     &lt;identifier&gt;blikingled_28069M_launchpad&lt;/identifier&gt;
-    &lt;clockRegistry type=&quot;sto.ClockRegistry&quot; uuid=&quot;fd05c331-8132-4db4-83e0-3c844a514a19&quot;&gt;
-      &lt;clocks type=&quot;sto.Timer&quot; uuid=&quot;6e82515f-425a-493d-a02e-e3bd3efcc7c5&quot;&gt;
+    &lt;clockRegistry type=&quot;sto.ClockRegistry&quot; uuid=&quot;e4f2509a-b921-4ee4-b017-20869f0fd404&quot;&gt;
+      &lt;clocks type=&quot;sto.Timer&quot; uuid=&quot;0dcecd2a-2230-4bc6-a352-595beba1c772&quot;&gt;
         &lt;clockTickConstraint&gt;PeriodicWithFixedResolution&lt;/clockTickConstraint&gt;
         &lt;computedFundamentalDiscretePeriod&gt;.25&lt;/computedFundamentalDiscretePeriod&gt;
-        &lt;fastestDiscreteRate type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;63b2c090-1d97-4ddf-821f-053023da5a89&quot;/&gt;
+        &lt;fastestDiscreteRate type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;9c54a649-e3e7-44ed-af7f-b5d97c7cef08&quot;/&gt;
         &lt;isDefaultTimer&gt;true&lt;/isDefaultTimer&gt;
         &lt;resolution&gt;.25&lt;/resolution&gt;
         &lt;timeAdvanceMode&gt;FixedStep&lt;/timeAdvanceMode&gt;
         &lt;identifier&gt;blikingled_28069M_launchpad::defaultTimer&lt;/identifier&gt;
-        &lt;rates type=&quot;sto.ContinuousRate&quot; uuid=&quot;ff9a37b7-c2e0-4e69-b036-9574045a76b9&quot;&gt;
+        &lt;rates type=&quot;sto.ContinuousRate&quot; uuid=&quot;bc8f8a3c-adad-41e9-bfce-5255098bf621&quot;&gt;
           &lt;annotation&gt;Cont&lt;/annotation&gt;
           &lt;clockId&gt;blikingled_28069M_launchpad::defaultTimer&lt;/clockId&gt;
           &lt;description&gt;Continuous&lt;/description&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;74d18e2f-d9b3-4984-b3c7-7b451fbec240&quot;/&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;238e23b2-6d56-4fef-ae81-2fca75a6912d&quot;/&gt;
         &lt;/rates&gt;
-        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;63b2c090-1d97-4ddf-821f-053023da5a89&quot;&gt;
+        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;9c54a649-e3e7-44ed-af7f-b5d97c7cef08&quot;&gt;
           &lt;annotation&gt;D1&lt;/annotation&gt;
           &lt;clockId&gt;blikingled_28069M_launchpad::defaultTimer&lt;/clockId&gt;
           &lt;colorIndex&gt;2&lt;/colorIndex&gt;
           &lt;description&gt;Discrete 1&lt;/description&gt;
           &lt;rateIdx&gt;1&lt;/rateIdx&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;121f6011-a1ef-4e87-99a4-aa3f11336b14&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;2417b63d-d302-49b0-b5ce-b483d70b2d0f&quot;&gt;
             &lt;period&gt;.25&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
         &lt;/rates&gt;
-        &lt;baseRate type=&quot;sto.ContinuousRate&quot; uuid=&quot;bbf70b39-5b89-48c3-ae3f-1a9c42f9a6be&quot;&gt;
+        &lt;baseRate type=&quot;sto.ContinuousRate&quot; uuid=&quot;0a1fa8a4-f29c-4ef9-a76f-8f0b1c8aeb57&quot;&gt;
           &lt;annotation&gt;Cont&lt;/annotation&gt;
           &lt;clockId&gt;blikingled_28069M_launchpad::defaultTimer&lt;/clockId&gt;
           &lt;description&gt;Continuous&lt;/description&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;c092b39c-6860-45de-9479-67c5d1da7b21&quot;/&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;5676d519-8500-4f4e-b9ec-5a0fa34ea3b2&quot;/&gt;
         &lt;/baseRate&gt;
       &lt;/clocks&gt;
-      &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;9845d48a-eb83-478f-9e8f-1bd570bfd571&quot;&gt;
+      &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;37f07e05-d405-41db-89e4-6f761f4fa595&quot;&gt;
         &lt;eventType&gt;PARAMETER_CHANGE_EVENT&lt;/eventType&gt;
         &lt;cNum&gt;2&lt;/cNum&gt;
         &lt;clockType&gt;Event&lt;/clockType&gt;
         &lt;identifier&gt;ParameterChangeEvent&lt;/identifier&gt;
-        &lt;rates type=&quot;sto.ModelWideEventRate&quot; uuid=&quot;b97014fa-da32-4a76-b7bc-5cbe29a93ed6&quot;&gt;
+        &lt;rates type=&quot;sto.ModelWideEventRate&quot; uuid=&quot;565f28bc-f82b-4387-b1b1-978c1bcbf2d2&quot;&gt;
           &lt;clockId&gt;ParameterChangeEvent&lt;/clockId&gt;
           &lt;rateIdx&gt;-1&lt;/rateIdx&gt;
           &lt;taskId&gt;ModelWideParameterChangeEvent&lt;/taskId&gt;
           &lt;useForExecution&gt;NotForExecution&lt;/useForExecution&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;8d2f65a9-39d5-4573-b2db-4e0c5e67633c&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;496f2107-8b25-4cbc-9426-81e3722c8f5d&quot;&gt;
             &lt;period&gt;inf&lt;/period&gt;
             &lt;rateType&gt;ModelWideParameterChangeEvent&lt;/rateType&gt;
           &lt;/rateSpec&gt;
         &lt;/rates&gt;
       &lt;/clocks&gt;
-      &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;9217e708-232a-4a86-8f46-d38191f01018&quot;&gt;
+      &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;9c308d1d-7c96-4a52-9260-9b92ff03daf0&quot;&gt;
         &lt;eventType&gt;ASYNCHRONOUS_INTERRUPT&lt;/eventType&gt;
         &lt;cNum&gt;1&lt;/cNum&gt;
         &lt;clockType&gt;Event&lt;/clockType&gt;
         &lt;identifier&gt;blikingled_28069M_launchpad/C28x Hardware Interrupt,0,0&lt;/identifier&gt;
-        &lt;rates type=&quot;sto.LegacyAsyncRate&quot; uuid=&quot;c2538c62-744d-44ad-a81e-b5fa7e5e96a8&quot;&gt;
+        &lt;rates type=&quot;sto.LegacyAsyncRate&quot; uuid=&quot;0b3edb3f-c5bc-4952-b7f9-6b12cb165f11&quot;&gt;
           &lt;annotation&gt;A1&lt;/annotation&gt;
           &lt;clockId&gt;blikingled_28069M_launchpad/C28x Hardware Interrupt,0,0&lt;/clockId&gt;
           &lt;colorIndex&gt;14&lt;/colorIndex&gt;
           &lt;description&gt;Asynchronous 1&lt;/description&gt;
           &lt;rateIdx&gt;2&lt;/rateIdx&gt;
           &lt;taskId&gt;blikingled_28069M_launchpad/C28x Hardware Interrupt,0,0.ExplicitTask0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;8c60b012-d0db-491a-bf6d-3c448deb45e0&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;6bf6c64a-44cb-4c42-936d-cbdcf874e7d1&quot;&gt;
             &lt;offset&gt;-2.0&lt;/offset&gt;
             &lt;period&gt;-1.0&lt;/period&gt;
             &lt;rateType&gt;LegacyAsync&lt;/rateType&gt;
@@ -127,19 +127,19 @@
       &lt;/clocks&gt;
       &lt;timeAdvanceMode&gt;FixedStep&lt;/timeAdvanceMode&gt;
     &lt;/clockRegistry&gt;
-    &lt;taskRegistry type=&quot;sto.TaskRegistry&quot; uuid=&quot;e7cf059c-506c-4aca-85f9-bd26982eb715&quot;&gt;
+    &lt;taskRegistry type=&quot;sto.TaskRegistry&quot; uuid=&quot;4a08bb19-4358-4c90-b2e4-65126eebc570&quot;&gt;
       &lt;hasUnknownEdges&gt;true&lt;/hasUnknownEdges&gt;
-      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;3d10e4e0-6daa-42ba-b5e4-d137125a491c&quot;&gt;
+      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;3026dffb-def6-40df-8e5e-3bfcc5b9dd5c&quot;&gt;
         &lt;isExecutable&gt;true&lt;/isExecutable&gt;
         &lt;isExplicit&gt;true&lt;/isExplicit&gt;
-        &lt;rates type=&quot;sto.LegacyAsyncRate&quot; uuid=&quot;00722b5d-3e04-4ca8-89b0-2525d4c7b603&quot;&gt;
+        &lt;rates type=&quot;sto.LegacyAsyncRate&quot; uuid=&quot;a757ac11-b469-44e3-a234-3bbe6f87f1cb&quot;&gt;
           &lt;annotation&gt;A1&lt;/annotation&gt;
           &lt;clockId&gt;blikingled_28069M_launchpad/C28x Hardware Interrupt,0,0&lt;/clockId&gt;
           &lt;colorIndex&gt;14&lt;/colorIndex&gt;
           &lt;description&gt;Asynchronous 1&lt;/description&gt;
           &lt;rateIdx&gt;2&lt;/rateIdx&gt;
           &lt;taskId&gt;blikingled_28069M_launchpad/C28x Hardware Interrupt,0,0.ExplicitTask0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;b6769e99-da7a-4b39-929d-c1f93e88f1ec&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;e36b7cd6-e6e4-47d6-ba35-de8a4932f0c6&quot;&gt;
             &lt;offset&gt;-2.0&lt;/offset&gt;
             &lt;period&gt;-1.0&lt;/period&gt;
             &lt;rateType&gt;LegacyAsync&lt;/rateType&gt;
@@ -152,14 +152,14 @@
         &lt;identifier&gt;blikingled_28069M_launchpad/C28x Hardware Interrupt,0,0.ExplicitTask0&lt;/identifier&gt;
         &lt;priority&gt;30&lt;/priority&gt;
       &lt;/rootTaskHierarchyElements&gt;
-      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;81a7cf00-ff09-4480-9ba4-7884f8a52563&quot;&gt;
+      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;59b1c24e-1f7d-4835-b30c-363ae5789bb5&quot;&gt;
         &lt;isExplicit&gt;true&lt;/isExplicit&gt;
-        &lt;rates type=&quot;sto.ModelWideEventRate&quot; uuid=&quot;b0b0f9aa-a797-4b8f-81cd-d0be18cb3149&quot;&gt;
+        &lt;rates type=&quot;sto.ModelWideEventRate&quot; uuid=&quot;d97d1d0e-ad4c-46bf-b99b-3dbc3c5d6a0a&quot;&gt;
           &lt;clockId&gt;ParameterChangeEvent&lt;/clockId&gt;
           &lt;rateIdx&gt;-1&lt;/rateIdx&gt;
           &lt;taskId&gt;ModelWideParameterChangeEvent&lt;/taskId&gt;
           &lt;useForExecution&gt;NotForExecution&lt;/useForExecution&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;2f2a799a-f30f-4882-a43f-f8419531051a&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;98327e16-a8c6-4106-b074-7d5d90cf4d5d&quot;&gt;
             &lt;period&gt;inf&lt;/period&gt;
             &lt;rateType&gt;ModelWideParameterChangeEvent&lt;/rateType&gt;
           &lt;/rateSpec&gt;
@@ -170,24 +170,24 @@
         &lt;identifier&gt;ModelWideParameterChangeEvent&lt;/identifier&gt;
         &lt;priority&gt;-1&lt;/priority&gt;
       &lt;/rootTaskHierarchyElements&gt;
-      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;d9ab50d1-3971-4944-b99d-68be88f4e717&quot;&gt;
+      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;febf5a81-93bd-49cd-860f-984a9f3f145d&quot;&gt;
         &lt;isExecutable&gt;true&lt;/isExecutable&gt;
         &lt;orderIndex&gt;1&lt;/orderIndex&gt;
-        &lt;rates type=&quot;sto.ContinuousRate&quot; uuid=&quot;39b8f80b-1ad7-41db-aa25-0116edfb98fd&quot;&gt;
+        &lt;rates type=&quot;sto.ContinuousRate&quot; uuid=&quot;1f57c763-2437-4a64-b1ef-b115e4d16fa0&quot;&gt;
           &lt;annotation&gt;Cont&lt;/annotation&gt;
           &lt;clockId&gt;blikingled_28069M_launchpad::defaultTimer&lt;/clockId&gt;
           &lt;description&gt;Continuous&lt;/description&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;a08e028b-268b-411c-952b-7875e24db434&quot;/&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;00c3bd26-3049-4bdb-b7ce-121529e28aae&quot;/&gt;
         &lt;/rates&gt;
-        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;f2b19b3c-d979-4cdf-ae29-ed1096a96925&quot;&gt;
+        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;8cbcb678-ebc5-4eb8-8963-d1ddb6ca2fe8&quot;&gt;
           &lt;annotation&gt;D1&lt;/annotation&gt;
           &lt;clockId&gt;blikingled_28069M_launchpad::defaultTimer&lt;/clockId&gt;
           &lt;colorIndex&gt;2&lt;/colorIndex&gt;
           &lt;description&gt;Discrete 1&lt;/description&gt;
           &lt;rateIdx&gt;1&lt;/rateIdx&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;20d2fd2d-dc51-4986-b0ec-8245074df650&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;abed48b9-401a-4b47-88cf-f3e96bad5e1b&quot;&gt;
             &lt;period&gt;.25&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
@@ -198,22 +198,22 @@
         &lt;identifier&gt;_task0&lt;/identifier&gt;
         &lt;priority&gt;40&lt;/priority&gt;
       &lt;/rootTaskHierarchyElements&gt;
-      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;a3b318f2-9d85-458f-88aa-036e43cc8c8f&quot;&gt;
+      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;f6814c3b-5867-472f-9d30-13bb81017c1a&quot;&gt;
         &lt;clockIdentifier&gt;blikingled_28069M_launchpad::defaultTimer&lt;/clockIdentifier&gt;
-        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;80e9bf4e-bf8b-4e7b-a20a-4b2a777bf071&quot;&gt;
+        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;1cfc3933-d9d9-4a9c-a999-f3f6e54a91e6&quot;&gt;
           &lt;isInternal&gt;true&lt;/isInternal&gt;
           &lt;targetClockIdentifier&gt;blikingled_28069M_launchpad/C28x Hardware Interrupt,0,0&lt;/targetClockIdentifier&gt;
           &lt;targetTaskIdentifier&gt;blikingled_28069M_launchpad/C28x Hardware Interrupt,0,0.ExplicitTask0&lt;/targetTaskIdentifier&gt;
         &lt;/serializedConnectionProperties&gt;
         &lt;taskIdentifier&gt;_task0&lt;/taskIdentifier&gt;
       &lt;/taskDependencyGraph&gt;
-      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;e1e9633c-bb50-4db3-9dfc-c1d8281cbcec&quot;&gt;
+      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;c5ce7820-319e-494d-8314-c7ac38e6f066&quot;&gt;
         &lt;clockIdentifier&gt;ParameterChangeEvent&lt;/clockIdentifier&gt;
         &lt;taskIdentifier&gt;ModelWideParameterChangeEvent&lt;/taskIdentifier&gt;
       &lt;/taskDependencyGraph&gt;
-      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;a8954b0c-7e58-4d13-b80c-17ff598446bb&quot;&gt;
+      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;d2da162f-7b8a-4f0d-a2b5-b4d4f8cb7259&quot;&gt;
         &lt;clockIdentifier&gt;blikingled_28069M_launchpad/C28x Hardware Interrupt,0,0&lt;/clockIdentifier&gt;
-        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;d0090c1d-6e55-4acb-a1d8-76079af6bfe4&quot;&gt;
+        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;a562ddbe-9502-40c2-ad53-a82d13b718c2&quot;&gt;
           &lt;isInternal&gt;true&lt;/isInternal&gt;
           &lt;targetClockIdentifier&gt;blikingled_28069M_launchpad::defaultTimer&lt;/targetClockIdentifier&gt;
           &lt;targetTaskIdentifier&gt;_task0&lt;/targetTaskIdentifier&gt;
@@ -224,10 +224,10 @@
     &lt;/taskRegistry&gt;
   &lt;/sto.Registry&gt;
 &lt;/slexec_sto&gt;</timingAndTaskingRegistry>
-    <FMUBlockMap type="ModelRefInfoRepo.FMUBlockInfo" uuid="639bb94b-8fe3-4934-9d5d-2275ede921c3"/>
-    <codeGenInfo type="ModelRefInfoRepo.CodeGenInformation" uuid="afefe13e-7254-4696-8ff8-b23a70e8e515"/>
-    <compiledVariantInfos type="ModelRefInfoRepo.CompiledVariantInfoMap" uuid="0a359994-5043-4180-88a2-9859f730d899"/>
-    <configSettingsForConsistencyChecks type="ModelRefInfoRepo.ConfigSettingsForConsistencyChecks" uuid="83efbf37-60ba-4e97-b43d-465d465355dd">
+    <FMUBlockMap type="ModelRefInfoRepo.FMUBlockInfo" uuid="8f4dd181-5e7e-4472-9e49-301f8860d493"/>
+    <codeGenInfo type="ModelRefInfoRepo.CodeGenInformation" uuid="f100d740-dfc8-4e9c-8eb0-151035e344d3"/>
+    <compiledVariantInfos type="ModelRefInfoRepo.CompiledVariantInfoMap" uuid="5b6619ea-eab7-443b-a4d4-0d5ad2fb12b9"/>
+    <configSettingsForConsistencyChecks type="ModelRefInfoRepo.ConfigSettingsForConsistencyChecks" uuid="69b3ed3c-1b1b-4984-a24a-1642bf58feb3">
       <consistentOutportInitialization>true</consistentOutportInitialization>
       <denormalBehavior>DENORMAL_TYPE_FTZ</denormalBehavior>
       <fixedStepSize>.25</fixedStepSize>
@@ -237,7 +237,7 @@
       <simSIMDOptimization>1</simSIMDOptimization>
       <solverName>FixedStepDiscrete</solverName>
       <solverType>SOLVER_TYPE_FIXEDSTEP</solverType>
-      <hardwareSettings type="ModelRefInfoRepo.HardwareSettings" uuid="02c02917-3ad1-4a50-bd3d-20180d304a0f">
+      <hardwareSettings type="ModelRefInfoRepo.HardwareSettings" uuid="23c07260-ad24-4ef6-80ba-f4013f86487b">
         <prodBitPerChar>16</prodBitPerChar>
         <prodBitPerDouble>64</prodBitPerDouble>
         <prodBitPerFloat>32</prodBitPerFloat>
@@ -256,35 +256,35 @@
         <prodWordSize>16</prodWordSize>
       </hardwareSettings>
     </configSettingsForConsistencyChecks>
-    <controllableInputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="42d5d56c-483d-42aa-8fd8-571b412803d0"/>
-    <controllableOutputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="e881a164-6416-4541-bd4e-f8c0b7725a96"/>
-    <dataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="f315a01b-8d86-4177-a8a8-8681ec0f1e72"/>
-    <expFcnUnconnectedDataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="c877ac63-0266-4434-8b11-8f1e34009d0a"/>
-    <interfaceParameterInfo type="ModelRefInfoRepo.InterfaceParameterInfo" uuid="de006a0c-bc36-4c21-9072-5e06ab4b29f9"/>
-    <messageInfo type="ModelRefInfoRepo.MessageInformation" uuid="81c27529-961b-4385-9d0e-c9a023fdc53d"/>
-    <methodInfo type="ModelRefInfoRepo.MethodExistenceInfo" uuid="73a83543-e5cf-4142-8381-a97338ac6847">
+    <controllableInputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="97f9aa2e-f4c8-4f68-8c8f-0d0fddc181a9"/>
+    <controllableOutputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="f9144983-d626-4620-bc7d-70abb22172a0"/>
+    <dataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="f9fa5c5c-ec2b-44a4-98e5-07a1ebba595d"/>
+    <expFcnUnconnectedDataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="a926cce6-dbee-428d-be76-2511139546e2"/>
+    <interfaceParameterInfo type="ModelRefInfoRepo.InterfaceParameterInfo" uuid="7b5655a7-1586-4174-901f-dd5b73bc5b27"/>
+    <messageInfo type="ModelRefInfoRepo.MessageInformation" uuid="94bfb54f-1b15-4a59-8871-8a45e3d42d68"/>
+    <methodInfo type="ModelRefInfoRepo.MethodExistenceInfo" uuid="f8dc1598-9868-4ad9-910f-41acc5a33394">
       <hasSystemInitializeMethod>true</hasSystemInitializeMethod>
       <hasSystemResetMethod>true</hasSystemResetMethod>
       <hasTerminateMethod>true</hasTerminateMethod>
       <hasUpdateMethod>true</hasUpdateMethod>
     </methodInfo>
-    <periodicEventPortUnsupportedBlockInfo type="ModelRefInfoRepo.PeriodicEventPortUnsupportedBlockInfo" uuid="022b5fad-4448-4494-8370-6a902b155e88">
+    <periodicEventPortUnsupportedBlockInfo type="ModelRefInfoRepo.PeriodicEventPortUnsupportedBlockInfo" uuid="e120d4b8-1c84-4e3c-a1cd-530214e66314">
       <multiRateBlocks>blikingled_28069M_launchpad/C28x Hardware Interrupt</multiRateBlocks>
     </periodicEventPortUnsupportedBlockInfo>
-    <portGroupsRequireSameRate type="ModelRefInfoRepo.PortGroupsRequireSameRate" uuid="74497aa6-98dc-488a-8472-9f124ff82cd2">
-      <DSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="ecd968cd-da8b-4ec0-a609-8affdab02fed"/>
-      <GlobalDSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="7c0832fa-81f7-492f-bf3a-4c86bbedfb44"/>
-      <mergedPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="95c17b3e-61e0-45be-8816-d6bc733aa4d4"/>
+    <portGroupsRequireSameRate type="ModelRefInfoRepo.PortGroupsRequireSameRate" uuid="20f34964-ce57-4871-afcd-541f261c3857">
+      <DSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="c8bc2ffe-8bfb-45e1-8d1c-bda50d3ebd9a"/>
+      <GlobalDSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="cf007a7c-5ed3-4f6d-ab91-7b24df084cd9"/>
+      <mergedPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="0769012b-dff0-44e3-846e-cb5838ab051f"/>
     </portGroupsRequireSameRate>
-    <rateBasedMdlGlobalDSMRateSpec type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="69911691-015e-4a99-b9ce-97bbbd5ee41e"/>
-    <rateSpecOfGlobalDSMAccessedByDescExpFcnMdlMap type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="c8ff1f61-495a-4cd4-be85-36766e417a6a"/>
-    <rootBlockDiagramInterface type="ci.Model" uuid="f10a83a0-f7b1-41f1-bf40-ee069b43ac13">
-      <p_RootComponentInterface type="ci.ComponentInterface" uuid="9b3f1d43-846e-4ed3-8124-d2ab02502a54">
+    <rateBasedMdlGlobalDSMRateSpec type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="80f49107-7fdc-4061-8027-05d0bac1e2df"/>
+    <rateSpecOfGlobalDSMAccessedByDescExpFcnMdlMap type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="c389ee8f-2437-414a-8426-936e44e43732"/>
+    <rootBlockDiagramInterface type="ci.Model" uuid="ccf6c19b-07df-4070-860b-5be1433e0f1c">
+      <p_RootComponentInterface type="ci.ComponentInterface" uuid="701eeeb1-9b36-4077-8ce3-cda09fb9411d">
         <p_Name>blikingled_28069M_launchpad</p_Name>
         <p_Type>ROOT</p_Type>
       </p_RootComponentInterface>
     </rootBlockDiagramInterface>
-    <simulinkFunctions type="ModelRefInfoRepo.SimulinkFunctions" uuid="c11c7403-7713-40d7-83cf-30d235145e5c">
+    <simulinkFunctions type="ModelRefInfoRepo.SimulinkFunctions" uuid="30a3e0f4-e2e7-4312-ae74-49dcb77349b5">
       <compSimulinkFunctionCatalog></compSimulinkFunctionCatalog>
     </simulinkFunctions>
     <sltpContext type="sltp.mm.core.Context" uuid="eaa72d88-4ee5-416d-b060-e92534399baf">
@@ -333,19 +333,19 @@
         </subgraph>
       </rootTask>
     </sltpContext>
-    <stateWriterToOwnerMap type="ModelRefInfoRepo.StateWriterInfo" uuid="fc6808a1-35ad-4269-a2b4-cadfb61442ef"/>
-    <stoClientDataRegistry type="sto.ClientDataRegistry" uuid="bd25fc4b-4889-4f55-ba2c-a8d8a9f8eaf2">
-      <dataSets type="sto.ClientClockNamedDataSet" uuid="8881b17c-667a-493f-bffd-f4d490a09c6a">
+    <stateWriterToOwnerMap type="ModelRefInfoRepo.StateWriterInfo" uuid="866dad35-03a2-40ec-b67e-e7b9b3fb1095"/>
+    <stoClientDataRegistry type="sto.ClientDataRegistry" uuid="bfc6e404-e17d-47de-9fbc-a8ef10981d14">
+      <dataSets type="sto.ClientClockNamedDataSet" uuid="694ace3f-ee3a-442b-822d-c10c391b56bc">
         <tag>sltpEvents</tag>
       </dataSets>
-      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="f06d5c09-00a8-4fdb-99b6-4ff01569299f">
+      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="2a1e55db-4030-4711-8365-491593f2988e">
         <tag>sltpTaskGroups</tag>
       </dataSets>
-      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="2e06b5eb-cdae-4179-ae02-78582c9fd143">
-        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="fe11db5b-2734-4a99-9eae-cec64ec83358"/>
-        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="fe11db5b-2734-4a99-9eae-cec64ec83358">
+      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="17d09886-4f5b-43c9-a84e-04131b03405a">
+        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="b58c05bb-dd60-41ff-b4a9-584b869387d4"/>
+        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="b58c05bb-dd60-41ff-b4a9-584b869387d4">
           <dataName>Cont</dataName>
-          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="2e06b5eb-cdae-4179-ae02-78582c9fd143"/>
+          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="17d09886-4f5b-43c9-a84e-04131b03405a"/>
           <id type="sto.TaskHierarchyElementId">
             <clockId>blikingled_28069M_launchpad::defaultTimer</clockId>
             <id>_task0</id>
@@ -354,6 +354,6 @@
         <tag>sltpTasks</tag>
       </dataSets>
     </stoClientDataRegistry>
-    <varTsUIDMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="34e262d5-1726-4868-8c33-ae4ea2dea3cf"/>
+    <varTsUIDMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="45825cb3-d8ee-4be8-b2f7-0eb8e9d491dd"/>
   </ModelRefInfoRepo.ModelRefInfoRoot>
 </MF0>

@@ -7,9 +7,9 @@
  *
  * Code generation for model "blikingled_28069M_launchpad".
  *
- * Model version              : 1.20
+ * Model version              : 1.23
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Mar 18 16:55:18 2024
+ * C source code generated on : Mon Mar 18 17:25:45 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000

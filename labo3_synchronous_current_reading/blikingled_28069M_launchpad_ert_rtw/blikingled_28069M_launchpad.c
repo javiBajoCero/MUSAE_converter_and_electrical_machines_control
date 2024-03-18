@@ -7,9 +7,9 @@
  *
  * Code generation for model "blikingled_28069M_launchpad".
  *
- * Model version              : 1.20
+ * Model version              : 1.23
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Mar 18 16:55:18 2024
+ * C source code generated on : Mon Mar 18 17:25:45 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -19,8 +19,8 @@
 
 #include "blikingled_28069M_launchpad.h"
 #include "blikingled_28069M_launchpad_private.h"
-#include <math.h>
 #include "rtwtypes.h"
+#include <math.h>
 #include <string.h>
 #include "xcp.h"
 #include "ext_mode.h"
@@ -92,6 +92,32 @@ void isr_int1pie1_task_fcn(void)
         blikingled_28069M_launchpad_B.ADC2[1] = (AdcResult.ADCRESULT5);
       }
 
+      /* Sum: '<S4>/Sum' incorporates:
+       *  Constant: '<S4>/Constant'
+       *  Gain: '<S4>/Gain'
+       */
+      blikingled_28069M_launchpad_B.Sum = (real_T)((uint32_T)
+        blikingled_28069M_launchpad_P.TranslatetoAmps2_Gain *
+        blikingled_28069M_launchpad_B.ADC1[0]) * 3.0517578125E-5 -
+        blikingled_28069M_launchpad_P.TranslatetoAmps2_Offset;
+
+      /* Sum: '<S3>/Sum' incorporates:
+       *  Constant: '<S3>/Constant'
+       *  Gain: '<S3>/Gain'
+       */
+      blikingled_28069M_launchpad_B.Sum_h = (real_T)((uint32_T)
+        blikingled_28069M_launchpad_P.TranslatetoAmps1_Gain *
+        blikingled_28069M_launchpad_B.A0andB0[1]) * 3.0517578125E-5 -
+        blikingled_28069M_launchpad_P.TranslatetoAmps1_Offset;
+
+      /* Sum: '<S2>/Sum' incorporates:
+       *  Constant: '<S2>/Constant'
+       *  Gain: '<S2>/Gain'
+       */
+      blikingled_28069M_launchpad_B.Sum_f = (real_T)((uint32_T)
+        blikingled_28069M_launchpad_P.TranslatetoAmps_Gain *
+        blikingled_28069M_launchpad_B.A0andB0[0]) * 3.0517578125E-5 -
+        blikingled_28069M_launchpad_P.TranslatetoAmps_Offset;
       blikingled_28069M_launchpad_DW.SimulinkFunction_SubsysRanBC = 4;
 
       /* End of Outputs for S-Function (c28xisr_c2000): '<Root>/C28x Hardware Interrupt' */
@@ -273,10 +299,10 @@ void blikingled_28069M_launchpad_initialize(void)
   blikingled_28069M_launchpad_M->Timing.stepSize0 = 0.25;
 
   /* External mode info */
-  blikingled_28069M_launchpad_M->Sizes.checksums[0] = (3856148356U);
-  blikingled_28069M_launchpad_M->Sizes.checksums[1] = (760663224U);
-  blikingled_28069M_launchpad_M->Sizes.checksums[2] = (1344724509U);
-  blikingled_28069M_launchpad_M->Sizes.checksums[3] = (4172837125U);
+  blikingled_28069M_launchpad_M->Sizes.checksums[0] = (4231932301U);
+  blikingled_28069M_launchpad_M->Sizes.checksums[1] = (2978598347U);
+  blikingled_28069M_launchpad_M->Sizes.checksums[2] = (1559653003U);
+  blikingled_28069M_launchpad_M->Sizes.checksums[3] = (214743051U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;

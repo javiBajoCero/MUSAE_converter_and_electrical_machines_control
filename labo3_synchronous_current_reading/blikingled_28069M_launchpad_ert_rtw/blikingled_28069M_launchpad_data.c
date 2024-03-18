@@ -7,9 +7,9 @@
  *
  * Code generation for model "blikingled_28069M_launchpad".
  *
- * Model version              : 1.20
+ * Model version              : 1.23
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Mar 18 16:55:18 2024
+ * C source code generated on : Mon Mar 18 17:25:45 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -21,6 +21,36 @@
 
 /* Block parameters (default storage) */
 P_blikingled_28069M_launchpad_T blikingled_28069M_launchpad_P = {
+  /* Mask Parameter: TranslatetoAmps2_Offset
+   * Referenced by: '<S4>/Constant'
+   */
+  2047.5,
+
+  /* Mask Parameter: TranslatetoAmps1_Offset
+   * Referenced by: '<S3>/Constant'
+   */
+  2047.5,
+
+  /* Mask Parameter: TranslatetoAmps_Offset
+   * Referenced by: '<S2>/Constant'
+   */
+  2047.5,
+
+  /* Mask Parameter: TranslatetoAmps2_Gain
+   * Referenced by: '<S4>/Gain'
+   */
+  32768U,
+
+  /* Mask Parameter: TranslatetoAmps1_Gain
+   * Referenced by: '<S3>/Gain'
+   */
+  32768U,
+
+  /* Mask Parameter: TranslatetoAmps_Gain
+   * Referenced by: '<S2>/Gain'
+   */
+  32768U,
+
   /* Expression: [1 1]
    * Referenced by: '<Root>/Constant'
    */
@@ -51,10 +81,10 @@ P_blikingled_28069M_launchpad_T blikingled_28069M_launchpad_P = {
    */
   1.0,
 
-  /* Expression: 1150
+  /* Expression: 227.7826404571533
    * Referenced by: '<Root>/Sine Wave'
    */
-  1150.0,
+  227.78264045715329,
 
   /* Expression: 2300
    * Referenced by: '<Root>/Sine Wave'
