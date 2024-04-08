@@ -51,11 +51,6 @@ blikingled_28069M_launchpad.obj: C:\Users\citcea\Documents\GitHub\MUSAE\MUSAE_co
 blikingled_28069M_launchpad.obj: C:/PROGRA~1/MATLAB/R2023a/toolbox/c2b/tic2000_shared/src/c2000SchedulerTimer.h
 blikingled_28069M_launchpad.obj: C:\Users\citcea\Documents\GitHub\MUSAE\MUSAE_converter_and_electrical_machines_control\labo3_synchronous_current_reading\blikingled_28069M_launchpad_ert_rtw\blikingled_28069M_launchpad_private.h
 blikingled_28069M_launchpad.obj: C:\Users\citcea\Documents\GitHub\MUSAE\MUSAE_converter_and_electrical_machines_control\labo3_synchronous_current_reading\blikingled_28069M_launchpad_ert_rtw\multiword_types.h
-blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/math.h
-blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/_defs.h
-blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/sys/_types.h
-blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/machine/_types.h
-blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/machine/_limits.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~1/MATLAB/R2023a/toolbox/coder/xcp/src/target/slave/include/xcp.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~1/MATLAB/R2023a/toolbox/coder/xcp/src/target/slave/common/xcp_common.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stddef.h
@@ -65,6 +60,8 @@ blikingled_28069M_launchpad.obj: C:/Users/citcea/Documents/GitHub/MUSAE/MUSAE_co
 blikingled_28069M_launchpad.obj: C:/PROGRA~1/MATLAB/R2023a/toolbox/coder/xcp/src/target/slave/protocol/src/xcp_cfg.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdio.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdarg.h
+blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/sys/_types.h
+blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/machine/_types.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdint.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/_stdint40.h
 blikingled_28069M_launchpad.obj: C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/sys/stdint.h
@@ -125,11 +122,6 @@ C:\Users\citcea\Documents\GitHub\MUSAE\MUSAE_converter_and_electrical_machines_c
 C:/PROGRA~1/MATLAB/R2023a/toolbox/c2b/tic2000_shared/src/c2000SchedulerTimer.h:
 C:\Users\citcea\Documents\GitHub\MUSAE\MUSAE_converter_and_electrical_machines_control\labo3_synchronous_current_reading\blikingled_28069M_launchpad_ert_rtw\blikingled_28069M_launchpad_private.h:
 C:\Users\citcea\Documents\GitHub\MUSAE\MUSAE_converter_and_electrical_machines_control\labo3_synchronous_current_reading\blikingled_28069M_launchpad_ert_rtw\multiword_types.h:
-C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/math.h:
-C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/_defs.h:
-C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/sys/_types.h:
-C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/machine/_types.h:
-C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/machine/_limits.h:
 C:/PROGRA~1/MATLAB/R2023a/toolbox/coder/xcp/src/target/slave/include/xcp.h:
 C:/PROGRA~1/MATLAB/R2023a/toolbox/coder/xcp/src/target/slave/common/xcp_common.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stddef.h:
@@ -139,6 +131,8 @@ C:/Users/citcea/Documents/GitHub/MUSAE/MUSAE_converter_and_electrical_machines_c
 C:/PROGRA~1/MATLAB/R2023a/toolbox/coder/xcp/src/target/slave/protocol/src/xcp_cfg.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdio.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdarg.h:
+C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/sys/_types.h:
+C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/machine/_types.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/stdint.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/_stdint40.h:
 C:/PROGRA~3/MATLAB/tic2000/3P778C~1.INS/TIC28X~1.INS/TI-CGT~1.LTS/include/sys/stdint.h:

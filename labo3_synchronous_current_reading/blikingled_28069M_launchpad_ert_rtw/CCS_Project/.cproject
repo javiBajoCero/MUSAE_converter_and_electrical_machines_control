@@ -116,7 +116,7 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_2_NUMBER=5">
 </listOptionValue>
-<listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_3_SIZE=96">
+<listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_3_SIZE=104">
 </listOptionValue>
 <listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_3_NUMBER=5">
 </listOptionValue>
@@ -194,25 +194,25 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_MEM_BLOCK_2_NUMBER=2">
 </listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MEM_BLOCK_3_SIZE=96">
+<listOptionValue builtIn="false" value="XCP_MEM_BLOCK_3_SIZE=104">
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_MEM_BLOCK_3_NUMBER=2">
 </listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MEM_RESERVED_POOLS_TOTAL_SIZE=628">
+<listOptionValue builtIn="false" value="XCP_MEM_RESERVED_POOLS_TOTAL_SIZE=640">
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_MEM_RESERVED_POOLS_NUMBER=3">
-</listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MEM_DAQ_RESERVED_POOL_BLOCKS_NUMBER=3">
-</listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MEM_DAQ_RESERVED_POOLS_NUMBER=2">
-</listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MIN_EVENT_NO_RESERVED_POOL=3">
 </listOptionValue>
 <listOptionValue builtIn="false" value="F28069M">
 </listOptionValue>
 <listOptionValue builtIn="false" value="BOOT_FROM_FLASH=1">
 </listOptionValue>
 <listOptionValue builtIn="false" value="MW_FAST_RTS_INCLUDED=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="XCP_MEM_DAQ_RESERVED_POOL_BLOCKS_NUMBER=3">
+</listOptionValue>
+<listOptionValue builtIn="false" value="XCP_MEM_DAQ_RESERVED_POOLS_NUMBER=2">
+</listOptionValue>
+<listOptionValue builtIn="false" value="XCP_MIN_EVENT_NO_RESERVED_POOL=3">
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS.1292182979" name="Other flags" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS" valueType="stringList">
@@ -380,7 +380,7 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_2_NUMBER=5">
 </listOptionValue>
-<listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_3_SIZE=96">
+<listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_3_SIZE=104">
 </listOptionValue>
 <listOptionValue builtIn="false" value="INTERNAL_XCP_MEM_BLOCK_3_NUMBER=5">
 </listOptionValue>
@@ -458,25 +458,25 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_MEM_BLOCK_2_NUMBER=2">
 </listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MEM_BLOCK_3_SIZE=96">
+<listOptionValue builtIn="false" value="XCP_MEM_BLOCK_3_SIZE=104">
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_MEM_BLOCK_3_NUMBER=2">
 </listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MEM_RESERVED_POOLS_TOTAL_SIZE=628">
+<listOptionValue builtIn="false" value="XCP_MEM_RESERVED_POOLS_TOTAL_SIZE=640">
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_MEM_RESERVED_POOLS_NUMBER=3">
-</listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MEM_DAQ_RESERVED_POOL_BLOCKS_NUMBER=3">
-</listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MEM_DAQ_RESERVED_POOLS_NUMBER=2">
-</listOptionValue>
-<listOptionValue builtIn="false" value="XCP_MIN_EVENT_NO_RESERVED_POOL=3">
 </listOptionValue>
 <listOptionValue builtIn="false" value="F28069M">
 </listOptionValue>
 <listOptionValue builtIn="false" value="BOOT_FROM_FLASH=1">
 </listOptionValue>
 <listOptionValue builtIn="false" value="MW_FAST_RTS_INCLUDED=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="XCP_MEM_DAQ_RESERVED_POOL_BLOCKS_NUMBER=3">
+</listOptionValue>
+<listOptionValue builtIn="false" value="XCP_MEM_DAQ_RESERVED_POOLS_NUMBER=2">
+</listOptionValue>
+<listOptionValue builtIn="false" value="XCP_MIN_EVENT_NO_RESERVED_POOL=3">
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS.1292182979" name="Other flags" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS" valueType="stringList">

@@ -7,9 +7,9 @@
  *
  * Code generation for model "blikingled_28069M_launchpad".
  *
- * Model version              : 1.23
+ * Model version              : 1.25
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Mar 18 17:25:45 2024
+ * C source code generated on : Mon Apr  8 18:08:58 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -86,10 +86,11 @@ extern void config_ePWM_XBAR(void);
 /* Block signals (default storage) */
 typedef struct {
   real_T uHzpulse;                     /* '<Root>/2Hz pulse' */
-  real_T SineWave;                     /* '<Root>/Sine Wave' */
-  real_T Sum;                          /* '<S4>/Sum' */
-  real_T Sum_h;                        /* '<S3>/Sum' */
-  real_T Sum_f;                        /* '<S2>/Sum' */
+  real_T Gain;                         /* '<Root>/Gain' */
+  real_T Gain_d;                       /* '<S5>/Gain' */
+  real_T Gain_l;                       /* '<S4>/Gain' */
+  real_T Gain_h;                       /* '<S3>/Gain' */
+  real_T Gain_b;                       /* '<S2>/Gain' */
   uint16_T A0andB0[2];                 /* '<S1>/ADC' */
   uint16_T ADC1[2];                    /* '<S1>/ADC1' */
   uint16_T ADC2[2];                    /* '<S1>/ADC2' */
@@ -115,23 +116,53 @@ typedef struct {
 
 /* Parameters (default storage) */
 struct P_blikingled_28069M_launchpad_T_ {
+  real_T calibration3_Gain;            /* Mask Parameter: calibration3_Gain
+                                        * Referenced by: '<S9>/Gain'
+                                        */
+  real_T TranslatetoVolts_Gain;        /* Mask Parameter: TranslatetoVolts_Gain
+                                        * Referenced by: '<S5>/Gain'
+                                        */
+  real_T calibration2_Gain;            /* Mask Parameter: calibration2_Gain
+                                        * Referenced by: '<S8>/Gain'
+                                        */
+  real_T TranslatetoAmps2_Gain;        /* Mask Parameter: TranslatetoAmps2_Gain
+                                        * Referenced by: '<S4>/Gain'
+                                        */
+  real_T calibration1_Gain;            /* Mask Parameter: calibration1_Gain
+                                        * Referenced by: '<S7>/Gain'
+                                        */
+  real_T TranslatetoAmps1_Gain;        /* Mask Parameter: TranslatetoAmps1_Gain
+                                        * Referenced by: '<S3>/Gain'
+                                        */
+  real_T calibration_Gain;             /* Mask Parameter: calibration_Gain
+                                        * Referenced by: '<S6>/Gain'
+                                        */
+  real_T TranslatetoAmps_Gain;         /* Mask Parameter: TranslatetoAmps_Gain
+                                        * Referenced by: '<S2>/Gain'
+                                        */
+  real_T calibration3_Offset;          /* Mask Parameter: calibration3_Offset
+                                        * Referenced by: '<S9>/Constant'
+                                        */
+  real_T TranslatetoVolts_Offset;     /* Mask Parameter: TranslatetoVolts_Offset
+                                       * Referenced by: '<S5>/Constant'
+                                       */
+  real_T calibration2_Offset;          /* Mask Parameter: calibration2_Offset
+                                        * Referenced by: '<S8>/Constant'
+                                        */
   real_T TranslatetoAmps2_Offset;     /* Mask Parameter: TranslatetoAmps2_Offset
                                        * Referenced by: '<S4>/Constant'
                                        */
+  real_T calibration1_Offset;          /* Mask Parameter: calibration1_Offset
+                                        * Referenced by: '<S7>/Constant'
+                                        */
   real_T TranslatetoAmps1_Offset;     /* Mask Parameter: TranslatetoAmps1_Offset
                                        * Referenced by: '<S3>/Constant'
                                        */
+  real_T calibration_Offset;           /* Mask Parameter: calibration_Offset
+                                        * Referenced by: '<S6>/Constant'
+                                        */
   real_T TranslatetoAmps_Offset;       /* Mask Parameter: TranslatetoAmps_Offset
                                         * Referenced by: '<S2>/Constant'
-                                        */
-  uint16_T TranslatetoAmps2_Gain;      /* Mask Parameter: TranslatetoAmps2_Gain
-                                        * Referenced by: '<S4>/Gain'
-                                        */
-  uint16_T TranslatetoAmps1_Gain;      /* Mask Parameter: TranslatetoAmps1_Gain
-                                        * Referenced by: '<S3>/Gain'
-                                        */
-  uint16_T TranslatetoAmps_Gain;       /* Mask Parameter: TranslatetoAmps_Gain
-                                        * Referenced by: '<S2>/Gain'
                                         */
   real_T Constant_Value[2];            /* Expression: [1 1]
                                         * Referenced by: '<Root>/Constant'
@@ -151,20 +182,11 @@ struct P_blikingled_28069M_launchpad_T_ {
   real_T Constant1_Value;              /* Expression: 1
                                         * Referenced by: '<Root>/Constant1'
                                         */
-  real_T SineWave_Amp;                 /* Expression: 227.7826404571533
-                                        * Referenced by: '<Root>/Sine Wave'
-                                        */
-  real_T SineWave_Bias;                /* Expression: 2300
-                                        * Referenced by: '<Root>/Sine Wave'
-                                        */
-  real_T SineWave_Freq;                /* Expression: 100
-                                        * Referenced by: '<Root>/Sine Wave'
-                                        */
-  real_T SineWave_Phase;               /* Expression: 0
-                                        * Referenced by: '<Root>/Sine Wave'
-                                        */
   real_T Constant2_Value;              /* Expression: 2300
                                         * Referenced by: '<Root>/Constant2'
+                                        */
+  real_T Gain_Gain;                    /* Expression: 0.8
+                                        * Referenced by: '<Root>/Gain'
                                         */
 };
 
@@ -234,6 +256,12 @@ extern volatile boolean_T stopRequested;
 extern volatile boolean_T runModel;
 
 /*-
+ * These blocks were eliminated from the model due to optimizations:
+ *
+ * Block '<Root>/Sine Wave' : Unused code path elimination
+ */
+
+/*-
  * The generated code includes comments that allow you to trace directly
  * back to the appropriate location in the model.  The basic format
  * is <system>/block_name, where system is the system number (uniquely
@@ -252,5 +280,10 @@ extern volatile boolean_T runModel;
  * '<S2>'   : 'blikingled_28069M_launchpad/Simulink Function/Translate to Amps'
  * '<S3>'   : 'blikingled_28069M_launchpad/Simulink Function/Translate to Amps1'
  * '<S4>'   : 'blikingled_28069M_launchpad/Simulink Function/Translate to Amps2'
+ * '<S5>'   : 'blikingled_28069M_launchpad/Simulink Function/Translate to Volts'
+ * '<S6>'   : 'blikingled_28069M_launchpad/Simulink Function/calibration'
+ * '<S7>'   : 'blikingled_28069M_launchpad/Simulink Function/calibration1'
+ * '<S8>'   : 'blikingled_28069M_launchpad/Simulink Function/calibration2'
+ * '<S9>'   : 'blikingled_28069M_launchpad/Simulink Function/calibration3'
  */
 #endif                           /* RTW_HEADER_blikingled_28069M_launchpad_h_ */
