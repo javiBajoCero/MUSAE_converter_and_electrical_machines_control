@@ -7,9 +7,9 @@
  *
  * Code generation for model "blikingled_28069M_launchpad".
  *
- * Model version              : 1.25
+ * Model version              : 1.27
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Apr  8 18:08:58 2024
+ * C source code generated on : Mon Apr 22 16:20:07 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -185,7 +185,7 @@ struct P_blikingled_28069M_launchpad_T_ {
   real_T Constant2_Value;              /* Expression: 2300
                                         * Referenced by: '<Root>/Constant2'
                                         */
-  real_T Gain_Gain;                    /* Expression: 0.8
+  real_T Gain_Gain;                    /* Expression: 0.5
                                         * Referenced by: '<Root>/Gain'
                                         */
 };

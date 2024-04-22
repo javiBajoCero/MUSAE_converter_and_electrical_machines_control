@@ -7,9 +7,9 @@
  *
  * Code generation for model "blikingled_28069M_launchpad".
  *
- * Model version              : 1.25
+ * Model version              : 1.27
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Apr  8 18:08:58 2024
+ * C source code generated on : Mon Apr 22 16:20:07 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -325,10 +325,10 @@ void blikingled_28069M_launchpad_initialize(void)
   blikingled_28069M_launchpad_M->Timing.stepSize0 = 0.25;
 
   /* External mode info */
-  blikingled_28069M_launchpad_M->Sizes.checksums[0] = (2499586503U);
-  blikingled_28069M_launchpad_M->Sizes.checksums[1] = (4120847159U);
-  blikingled_28069M_launchpad_M->Sizes.checksums[2] = (3377368750U);
-  blikingled_28069M_launchpad_M->Sizes.checksums[3] = (2332772894U);
+  blikingled_28069M_launchpad_M->Sizes.checksums[0] = (191863988U);
+  blikingled_28069M_launchpad_M->Sizes.checksums[1] = (837027486U);
+  blikingled_28069M_launchpad_M->Sizes.checksums[2] = (4083727945U);
+  blikingled_28069M_launchpad_M->Sizes.checksums[3] = (4262463111U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;

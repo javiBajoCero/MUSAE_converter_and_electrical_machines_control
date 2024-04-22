@@ -7,9 +7,9 @@
  *
  * Code generation for model "blikingled_28069M_launchpad".
  *
- * Model version              : 1.25
+ * Model version              : 1.27
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Mon Apr  8 18:08:58 2024
+ * C source code generated on : Mon Apr 22 16:20:07 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -29,7 +29,7 @@ P_blikingled_28069M_launchpad_T blikingled_28069M_launchpad_P = {
   /* Mask Parameter: TranslatetoVolts_Gain
    * Referenced by: '<S5>/Gain'
    */
-  0.0008056640625,
+  0.010815918947269538,
 
   /* Mask Parameter: calibration2_Gain
    * Referenced by: '<S8>/Gain'
@@ -136,8 +136,8 @@ P_blikingled_28069M_launchpad_T blikingled_28069M_launchpad_P = {
    */
   2300.0,
 
-  /* Expression: 0.8
+  /* Expression: 0.5
    * Referenced by: '<Root>/Gain'
    */
-  0.8
+  0.5
 };
